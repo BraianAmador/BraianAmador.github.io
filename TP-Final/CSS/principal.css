@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
+.main {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    background-color: rgb(74, 178, 219);
+}
+
+.header {
+	padding: 0 20px;
+	display: grid;
+    background-color: rgb(12, 42, 126);
+	grid-template-columns: auto 0.5fr auto;
+	align-items: center;
+	justify-content: space-between;
+    margin:auto;
+	grid-gap: 20px;
+	grid-template-areas: "logo busqueda iconos";
+}
+
+.header .contenedor-logo {
+	grid-area: logo;
+	display: flex;
+	align-items: center;
+
+}
+
+.header .contenedor-logo img {
+    width: 90px;
+    margin: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.header .contenedor-logo h1{
+    color:#fff;
+    text-align:left;
+    font-size:25px;
+}
+
+.header .barra-busqueda {
+	grid-area: busqueda;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header .barra-busqueda input {
+	min-width: 60%;
+	padding: 0 15px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header .barra-busqueda button:hover {
+	background: #1de248;
+    border-color: #1de248;
+}
+
+.header .botones-header {
+	grid-area: iconos;
+}
+
+.header .botones-header button:hover {
+	background: #1de248;
+}
+
+.programacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+	border-radius: 5px;
+	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+
+}
+
+.card-body2{
+    width: 90%;
+	margin-top: 20px;
+    background-color: rgb(12, 42, 126);
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+
+
+.programacion .card{
+    width: 190px;
+    margin: auto;
+    background-color: rgb(74, 178, 219);
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-header h1{
+	color:#fff;
+    font-size:25px;
+	margin: 10px;
+}
+
+
+@keyframes anim{
+    0% {background-color: rgb(74, 178, 219);}
+   25% {background-color: #1de248;} 
+   50% {background-color: rgb(255, 145, 0);} 
+   75% {background-color: rgb(74, 178, 219);} 
+  100% {background-color: rgb(255, 145, 0);} 
+}
+.barra-busqueda h3 {
+	border-radius: 4px;
+	border: 2px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 0 rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+	color:#fff;
+	text-align: center;
+	animation-name: anim;
+	margin-bottom: auto;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@media(max-width:425px){
+    .header{
+        width:100%;
+		padding: 20px;
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
+    }
+	.header .botones-header{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.programacion{
+		display: grid;
+		grid-template-areas:"imagen1 imagen2"
+							"imagen3 imagen4"
+							"imagen5 imagen6";
+
+	}
+
+	.programacion #imagen1{
+		width: 90%;
+		margin-top: 2px;
+		grid-area: imagen1;
+	}
+
+	.programacion #imagen2{
+		margin-top: 2px;
+		width: 90%;
+		grid-area: imagen2;
+	}
+
+	.programacion #imagen3{
+		margin-top: 2px;
+		width: 90%;
+		grid-area: imagen3;
+	}
+
+	.programacion #imagen4{
+		margin-top: 2px;
+		width: 90%;
+		grid-area: imagen4;
+	}
+
+	.programacion #imagen5{
+		margin-top: 2px;
+		width: 90%;
+		grid-area: imagen5;
+	}
+
+	.programacion #imagen6{
+		margin-top: 2px;
+		width: 90%;
+		grid-area: imagen6;
+	}
+}
