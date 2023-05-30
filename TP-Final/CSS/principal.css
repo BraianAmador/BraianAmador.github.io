@@ -22,7 +22,6 @@
 .header .contenedor-logo {
 	grid-area: logo;
 	display: flex;
-	align-items: center;
 
 }
 
@@ -34,9 +33,27 @@
   }
 
 .header .contenedor-logo h1{
-    color:#fff;
+    display: grid;
+	color:#fff;
     text-align:left;
     font-size:25px;
+	grid-template-areas: "libreria"
+						 "virtual"
+}
+
+.header .contenedor-logo .titulo{
+    display: grid;
+	align-content: center;
+	grid-template-areas: "libreria"
+						 "virtual"
+}
+
+#libreria{
+	grid-area: libreria;
+}
+
+#virtual{
+	grid-area: virtual;
 }
 
 .header .barra-busqueda {
@@ -69,7 +86,7 @@
 	background: #1de248;
 }
 
-.programacion{
+.contenedor{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -90,7 +107,7 @@
 
 
 
-.programacion .card{
+.contenedor .card{
     width: 190px;
     margin: auto;
     background-color: rgb(74, 178, 219);
@@ -138,14 +155,8 @@
     	flex-direction: column;
 		align-items: center;
     }
-	.header .botones-header{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-	}
 
-	.programacion{
+	.contenedor{
 		display: grid;
 		grid-template-areas:"imagen1 imagen2"
 							"imagen3 imagen4"
@@ -153,37 +164,37 @@
 
 	}
 
-	.programacion #imagen1{
+	.contenedor #imagen1{
 		width: 90%;
 		margin-top: 2px;
 		grid-area: imagen1;
 	}
 
-	.programacion #imagen2{
+	.contenedor #imagen2{
 		margin-top: 2px;
 		width: 90%;
 		grid-area: imagen2;
 	}
 
-	.programacion #imagen3{
+	.contenedor #imagen3{
 		margin-top: 2px;
 		width: 90%;
 		grid-area: imagen3;
 	}
 
-	.programacion #imagen4{
+	.contenedor #imagen4{
 		margin-top: 2px;
 		width: 90%;
 		grid-area: imagen4;
 	}
 
-	.programacion #imagen5{
+	.contenedor #imagen5{
 		margin-top: 2px;
 		width: 90%;
 		grid-area: imagen5;
 	}
 
-	.programacion #imagen6{
+	.contenedor #imagen6{
 		margin-top: 2px;
 		width: 90%;
 		grid-area: imagen6;

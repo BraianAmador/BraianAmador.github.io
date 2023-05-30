@@ -12,8 +12,6 @@
 
 .header{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     background-color: rgb(12, 42, 126);
     margin:0;
 }
@@ -26,14 +24,6 @@
   }
 
 
-
-.header h1{
-    color:#fff;
-	font-family: 'Oswald', sans-serif;
-	font-size:25px;
-
-}
-
 .form{
     width: 360px;
     margin: auto;
@@ -42,6 +32,26 @@
     box-sizing: border-box;
     margin-top: 70px; 
     border-radius: 7px;
+}
+
+.header .titulo{
+    display: grid;
+    align-content: center;
+    color:#fff;
+	font-family: 'Oswald', sans-serif;
+	font-size:25px;
+	grid-template-areas: "libreria"
+						 "virtual"
+}
+
+#libreria{
+	grid-area: libreria;
+    margin-bottom: 10px;
+}
+
+#virtual{
+	grid-area: virtual;
+    margin-top: 0;
 }
 
 h1{
