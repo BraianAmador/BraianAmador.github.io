@@ -32,17 +32,11 @@
     cursor: pointer;
   }
 
-.header .contenedor-logo h1{
+.header .contenedor-logo .titulo{
     display: grid;
 	color:#fff;
     text-align:left;
     font-size:25px;
-	grid-template-areas: "libreria"
-						 "virtual"
-}
-
-.header .contenedor-logo .titulo{
-    display: grid;
 	align-content: center;
 	grid-template-areas: "libreria"
 						 "virtual"
@@ -70,7 +64,7 @@
 	line-height: 35px;
 	border: 1px solid #ccc;
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .header .barra-busqueda button:hover {
