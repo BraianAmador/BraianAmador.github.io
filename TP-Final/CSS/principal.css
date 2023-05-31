@@ -71,6 +71,17 @@
 	grid-area: iconos;
 }
 
+#registrarte {
+	background: #56c424;
+	color:#fff;
+}
+
+#registrarte:hover {
+    box-shadow:0px 0px 2px 2px rgb(43, 148, 11);
+    transform: scale(1.0);
+
+}
+
 .contenedor{
     display: flex;
     align-items: center;
