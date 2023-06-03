@@ -8,17 +8,21 @@ function registrar()
     const correosValidos = ["@gmail.com", "@hotmail.com", "@yahoo.com"];
     var datos = [nombre, apellido, correo, clave, clave2];
 
-    if(datos.some(dato => dato.length < 0)){
-        alert = ("Por favor debe completar todos los campos");
+    if(datos.some(dato => dato.length == 0)){
+        alert("Por favor debe completar todos los campos");
+    }
+    else if(clave != clave2)
+    {   
+        alert("Las contraseñas no coinciden");
     }
     else if(correosValidos.some(elem => correo.includes(elem)) && clave == clave2)
     {
+        alert("Se ha registrado correctamente!");
         window.location = "home.html";
     }
     else{
-        alert = ("Por favor revise los datos ingresados");
+        alert("Por favor revise los datos ingresados");
     }
 }
-
 
 
