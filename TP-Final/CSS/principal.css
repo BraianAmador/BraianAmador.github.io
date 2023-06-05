@@ -169,6 +169,10 @@ footer{
 	font-family: 'Poppins', sans-serif;
 }
 
+footer div section a i:hover{
+	transform: scale(1.50);
+}
+
 @media(max-width:425px){
     .header{
         width:100%;
