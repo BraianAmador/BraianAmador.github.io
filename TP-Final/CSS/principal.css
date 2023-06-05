@@ -14,7 +14,6 @@
 	font-family: 'Poppins', sans-serif;
 	grid-template-columns: auto 0.5fr auto;
 	align-items: center;
-	justify-content: space-between;
     margin:auto;
 	grid-gap: 20px;
 	grid-template-areas: "logo busqueda iconos";
@@ -68,6 +67,18 @@
 }
 
 .header .botones-header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap:20px;
+	grid-area: iconos;
+}
+
+.header .botones-header2 {
+	display: flex;
+	align-items: center;
+	gap:5px;
+	justify-content: flex-end;
 	grid-area: iconos;
 }
 
@@ -80,6 +91,14 @@
     box-shadow:0px 0px 2px 2px rgb(43, 148, 11);
     transform: scale(1.0);
 
+}
+
+.header .botones-header{
+	margin-right: 20px;
+}
+
+.header .botones-header #user{
+	color: white ;
 }
 
 .contenedor{
@@ -162,6 +181,10 @@ footer{
 	.main{
 		text-align: center;
 
+	}
+
+	.header .botones-header{
+		margin-right: 0;
 	}
 
 	.contenedor{
