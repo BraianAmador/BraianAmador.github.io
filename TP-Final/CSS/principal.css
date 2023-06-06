@@ -79,6 +79,7 @@
 	align-items: center;
 	gap:5px;
 	justify-content: flex-end;
+	white-space: nowrap;
 	grid-area: iconos;
 }
 
@@ -113,10 +114,10 @@
 
 .card-body2{
     width: 90%;
-	margin-top: 20px;
+	margin-top: 2%;
     background-color: rgb(12, 42, 126);
 	font-family: 'Poppins', sans-serif;
-    border-radius: 4px;
+    border-radius: 15px;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
 }
@@ -124,7 +125,7 @@
 
 
 .contenedor .card{
-    width: 190px;
+    width: 15%;
     margin: auto;
     background-color: rgb(74, 178, 219);
 	font-family: 'Poppins', sans-serif;
@@ -173,7 +174,7 @@ footer div section a i:hover{
 	transform: scale(1.50);
 }
 
-@media(max-width:425px){
+@media(max-width:770px){
     .header{
         width:100%;
 		padding: 20px;
