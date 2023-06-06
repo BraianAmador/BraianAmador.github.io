@@ -174,7 +174,7 @@ footer div section a i:hover{
 	transform: scale(1.50);
 }
 
-@media(max-width:770px){
+@media(max-width:768px){
     .header{
         width:100%;
 		padding: 20px;
